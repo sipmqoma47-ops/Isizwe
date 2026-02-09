@@ -1,0 +1,92 @@
+:root{
+  --primary:#16A34A;
+  --bg:#F9FAFB;
+  --card:#fff;
+  --border:#E5E7EB;
+  --ink:#111827;
+  --muted:#6B7280;
+}
+
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--ink)}
+
+.header{position:sticky;top:0;z-index:50;background:var(--card);border-bottom:1px solid var(--border)}
+.header__inner{padding:14px 12px}
+.logo{margin:0;font-size:18px;font-weight:900}
+.tagline{margin:6px 0 0;color:var(--muted);font-size:12px}
+
+.tabs{display:flex;gap:8px;overflow:auto;padding:10px 12px;border-top:1px solid var(--border)}
+.tabs::-webkit-scrollbar{display:none}
+.tab{border:1px solid var(--border);background:#fff;color:#374151;padding:8px 10px;border-radius:999px;font-size:12px;font-weight:800;white-space:nowrap;cursor:pointer}
+.tab:hover{background:#F3F4F6}
+.tab.active{background:var(--primary);border-color:var(--primary);color:#fff}
+
+.meta{max-width:1100px;margin:14px auto 0;padding:0 12px}
+.meta__inner{background:#fff;border:1px solid var(--border);border-radius:14px;padding:12px;display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.muted{color:var(--muted);font-size:12px;margin:6px 0 0}
+
+.searchbox{display:flex;gap:8px;align-items:center}
+#search{padding:10px 12px;border:1px solid var(--border);border-radius:12px;outline:none;min-width:240px}
+#search:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(22,163,74,.18)}
+#clearBtn{padding:10px 12px;border:1px solid var(--border);border-radius:12px;background:#F3F4F6;cursor:pointer}
+#clearBtn:hover{background:#E5E7EB}
+
+.main{max-width:1100px;margin:14px auto 80px;padding:0 12px}
+.grid{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:12px}
+@media(min-width:640px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1024px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+.card{background:#fff;border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.04);display:flex;flex-direction:column}
+.card:hover{box-shadow:0 10px 20px rgba(0,0,0,.08);transform:translateY(-1px);transition:.12s ease}
+.card__img{width:100%;height:160px;object-fit:cover;background:#F3F4F6}
+.card__body{padding:12px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card__title{margin:0;font-size:14px;font-weight:900}
+.card__desc{margin:0;color:var(--muted);font-size:12px}
+.card__price{color:var(--primary);font-weight:900}
+
+.qtyrow{display:flex;gap:8px;align-items:center}
+.qtybtn{width:34px;height:34px;border:1px solid var(--border);background:#F3F4F6;border-radius:10px;font-size:18px;font-weight:900;cursor:pointer}
+.qtybtn:hover{background:#E5E7EB}
+.qtyinput{width:70px;text-align:center;border:1px solid var(--border);border-radius:10px;padding:8px}
+
+.note{border:1px solid var(--border);border-radius:10px;padding:9px 10px;outline:none}
+
+.actions{display:flex;gap:8px;margin-top:6px}
+.wa{flex:1;text-decoration:none;background:var(--primary);color:#fff;border-radius:12px;padding:10px 12px;font-weight:900;text-align:center}
+.wa:hover{filter:brightness(.95)}
+.copy{width:44px;border:1px solid var(--border);border-radius:12px;background:#fff;cursor:pointer}
+.copy:hover{background:#F9FAFB}
+
+.empty{background:#fff;border:1px solid var(--border);border-radius:16px;padding:18px;text-align:center;color:var(--muted)}
+.hidden{display:none}
+.logo img {
+  max-height: 60px; /* Adjust based on your header height */
+  display: inline-block;
+  margin-right: 10px;
+/* Container to align logo and text */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between image and text */
+  margin-bottom: 5px;
+}
+
+/* Make the logo image larger */
+.logo-img {
+  height: 80px; /* Increased from standard size */
+  width: auto;
+  border-radius: 4px; /* Optional: rounds the corners slightly */
+  object-fit: contain;
+}
+
+/* Adjust the text size to match the larger logo */
+.logo {
+  font-size: 2rem; 
+  margin: 0;
+  line-height: 1;
+}
+
+/* Ensure header padding allows for the larger logo */
+.header__inner {
+  padding: 20px 1rem;
+}

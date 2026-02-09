@@ -1,0 +1,528 @@
+:root {
+  --primary: #16A34A;
+  --bg: #F9FAFB;
+  --card: #fff;
+  --border: #E5E7EB;
+  --ink: #111827;
+  --muted: #6B7280;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+/* --- HEADER SECTION --- */
+.header {
+  position: relative; 
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  width: 100%;
+}
+
+.header__inner {
+  padding: 0; 
+}
+
+/* Logo Banner - Strict Height Control */
+.logo-banner {
+  width: 100%;
+  background: #76B900; 
+  height: 180px; /* Force a specific height so it's not too big */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo-banner img {
+  height: 100%;      /* Scale to the 180px height */
+  width: 100%;       /* Allow it to span width */
+  display: block;
+  object-fit: contain; /* Ensures the logo isn't cut off within that height */
+  padding: 10px 0;   /* Adds a tiny bit of breathing room inside the green */
+}
+
+/* Brand Text */
+.brand-text {
+  padding: 10px 16px;
+  background: white;
+}
+
+.logo {
+  margin: 0;
+  font-size: 20px; 
+  font-weight: 900;
+  color: var(--ink);
+}
+
+.tagline {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}/* --- HEADER SECTION --- */
+.header {
+  position: relative; 
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  width: 100%;
+}
+
+.header__inner {
+  padding: 0; 
+}
+
+/* Logo Banner - Strict Height Control */
+.logo-banner {
+  width: 100%;
+  background: #76B900; 
+  height: 180px; /* Force a specific height so it's not too big */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo-banner img {
+  height: 100%;      /* Scale to the 180px height */
+  width: 100%;       /* Allow it to span width */
+  display: block;
+  object-fit: contain; /* Ensures the logo isn't cut off within that height */
+  padding: 10px 0;   /* Adds a tiny bit of breathing room inside the green */
+}
+
+/* Brand Text */
+.brand-text {
+  padding: 10px 16px;
+  background: white;
+}
+
+.logo {
+  margin: 0;
+  font-size: 20px; 
+  font-weight: 900;
+  color: var(--ink);
+}
+
+.tagline {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}/* --- HEADER SECTION --- */
+.header {
+  position: relative; 
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  width: 100%;
+}
+
+.header__inner {
+  padding: 0; 
+}
+
+/* Logo Banner - Strict Height Control */
+.logo-banner {
+  width: 100%;
+  background: #76B900; 
+  height: 180px; /* Force a specific height so it's not too big */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo-banner img {
+  height: 100%;      /* Scale to the 180px height */
+  width: 100%;       /* Allow it to span width */
+  display: block;
+  object-fit: contain; /* Ensures the logo isn't cut off within that height */
+  padding: 10px 0;   /* Adds a tiny bit of breathing room inside the green */
+}
+
+/* Brand Text */
+.brand-text {
+  padding: 10px 16px;
+  background: white;
+}
+
+.logo {
+  margin: 0;
+  font-size: 20px; 
+  font-weight: 900;
+  color: var(--ink);
+}
+
+.tagline {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* Tabs - Ensure they stand out against the white background */
+.tabs {
+  display: flex;
+  gap: 8px;
+  overflow: auto;
+  padding: 12px;
+  border-top: 1px solid var(--border);
+  background: #fff;
+}/* --- HEADER SECTION --- */
+.header {
+  position: relative; 
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  width: 100%;
+}
+
+.header__inner {
+  padding: 0; /* Keeps the banner flush to the edges */
+}
+
+/* Logo Banner - Balanced Size */
+.logo-banner {
+  width: 100%;
+  background: #76B900; /* Matching your logo's green */
+  line-height: 0;
+  overflow: hidden;
+}
+
+.logo-banner img {
+  width: 100%;
+  height: auto;
+  /* Reduced from 450px to 320px to show more page content */
+  max-height: 320px; 
+  display: block;
+  object-fit: contain; 
+}
+
+/* Brand Text - Tightened Spacing */
+.brand-text {
+  padding: 12px 16px;
+  background: white;
+}
+
+.logo {
+  margin: 0;
+  font-size: 22px; 
+  font-weight: 900;
+  color: var(--ink);
+  letter-spacing: -0.5px;
+}
+
+.tagline {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Tabs - Ensure they stand out against the white background */
+.tabs {
+  display: flex;
+  gap: 8px;
+  overflow: auto;
+  padding: 12px;
+  border-top: 1px solid var(--border);
+  background: #fff;
+}
+
+/* Ensure tabs stay below the new branding layout */
+.tabs {
+  display: flex;
+  gap: 8px;
+  overflow: auto;
+  padding: 10px 12px;
+  border-top: 1px solid var(--border);
+}
+
+/* --- TABS SECTION --- */
+.tabs {
+  display: flex;
+  gap: 8px;
+  overflow: auto;
+  padding: 8px 12px;
+  border-top: 1px solid var(--border);
+}
+
+.tabs::-webkit-scrollbar { display: none; }
+
+.tab {
+  border: 1px solid var(--border);
+  background: #fff;
+  color: #374151;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+/* --- SEARCH & META SECTION --- */
+.meta {
+  max-width: 1100px;
+  margin: 10px auto 0;
+  padding: 0 12px;
+}
+
+.meta__inner {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 10px 12px; /* Tightened padding */
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.searchbox {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#search {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  outline: none;
+  min-width: 240px;
+}
+
+/* --- GRID & CARDS --- */
+.main {
+  max-width: 1100px;
+  margin: 12px auto 80px;
+  padding: 0 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media(min-width: 640px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media(min-width: 1024px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card__body { padding: 12px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.card__title { margin: 0; font-size: 14px; font-weight: 900; }
+
+.wa {
+  flex: 1;
+  text-decoration: none;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.hidden { display: none; }:root {
+  --primary: #16A34A;
+  --bg: #F9FAFB;
+  --card: #fff;
+  --border: #E5E7EB;
+  --ink: #111827;
+  --muted: #6B7280;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+/* --- HEADER SECTION --- */
+.header {
+  position: relative; /* Header now scrolls away with the page */
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  width: 100%;
+}
+
+.header__inner {
+  padding: 0; /* Removes padding so logo touches the left/right edges */
+}
+
+/* Logo Banner - Covers the width */
+.logo-banner {
+  width: 100%;
+  line-height: 0; /* Removes tiny white gap below images */
+}
+
+.logo-banner img {
+  width: 100%;       /* Spans the full white space */
+  height: auto;      /* Maintains proper image proportions */
+  max-height: 400px; /* Limits height so it doesn't push content too far down */
+  display: block;
+  object-fit: cover; /* Ensures the image fills the width beautifully */
+}
+
+/* Brand Text - Padding added back here so text isn't touching the edge */
+.brand-text {
+  padding: 12px 16px;
+}
+
+.logo {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.tagline {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Tabs Navigation */
+.tabs {
+  display: flex;
+  gap: 8px;
+  overflow: auto;
+  padding: 10px 12px;
+  border-top: 1px solid var(--border);
+  background: #fff;
+}
+
+/* --- TABS SECTION --- */
+.tabs {
+  display: flex;
+  gap: 8px;
+  overflow: auto;
+  padding: 8px 12px;
+  border-top: 1px solid var(--border);
+}
+
+.tabs::-webkit-scrollbar { display: none; }
+
+.tab {
+  border: 1px solid var(--border);
+  background: #fff;
+  color: #374151;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+/* --- SEARCH & META SECTION --- */
+.meta {
+  max-width: 1100px;
+  margin: 10px auto 0;
+  padding: 0 12px;
+}
+
+.meta__inner {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 10px 12px; /* Tightened padding */
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.searchbox {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#search {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  outline: none;
+  min-width: 240px;
+}
+
+/* --- GRID & CARDS --- */
+.main {
+  max-width: 1100px;
+  margin: 12px auto 80px;
+  padding: 0 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media(min-width: 640px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media(min-width: 1024px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card__body { padding: 12px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.card__title { margin: 0; font-size: 14px; font-weight: 900; }
+
+.wa {
+  flex: 1;
+  text-decoration: none;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.hidden { display: none; }

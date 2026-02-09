@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Isizwe Print & Projects</title>
+  <link rel="stylesheet" href="/static/css/app.css"/>
+  <link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#16A34A">
+</head>
+<body>
+
+<header class="header">
+  <div class="header__inner">
+    <div class="logo-banner">
+      <img src="static/images/isizweprintlogo.jpg" alt="Isizwe Print & Projects">
+    </div>
+    
+    <div class="brand-text">
+      <h1 class="logo">Isizwe Print & Projects</h1>
+      <p class="tagline">Order printing services quickly via WhatsApp</p>
+    </div>
+  </div>
+  <nav id="tabs" class="tabs"></nav>
+</header>
+
+<section class="meta">
+  <div class="meta__inner">
+    <div>
+      <h2 id="categoryTitle">Loading…</h2>
+      <p id="categoryDesc" class="muted"></p>
+    </div>
+
+    <div class="searchbox">
+      <input id="search" type="search" placeholder="Search in this category…"/>
+      <button id="clearBtn" type="button">Clear</button>
+    </div>
+  </div>
+</section>
+
+<main class="main">
+  <div id="grid" class="grid"></div>
+  <div id="empty" class="empty hidden">No products found.</div>
+</main>
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>
+
