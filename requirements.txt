@@ -1,0 +1,7 @@
+Flask==3.0.0
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
+SQLAlchemy
+alembic
+
